@@ -1,19 +1,17 @@
-ARDUINO_LIB_PATH=/usr/share/arduino/libraries
+ARDUINO_LIB_PATH=~/Arduino/libraries
 SOURCE_PATH=`pwd`
 
 all: 
 	@echo "Use [install], [unistall] or [doc]"
 
 install:
-	@echo "Instaling all libraries..."
-	ln -s  $(SOURCE_PATH)/$$lib $(ARDUINO_LIB_PATH); \
+	@echo "Instaling librarie..."
+	ln -s  $(SOURCE_PATH)/ $(ARDUINO_LIB_PATH)/ArduinoCarMonitor
 	@echo "done."
 	
 uninstall:
 	@echo "Uninstaling all libraries..."
-	@for lib in $(LIB_LIST) ; do \
-		rm -r $(ARDUINO_LIB_PATH)/$$lib ; \
-	done
+	rm -r $(ARDUINO_LIB_PATH)/ArduinoCarMonitor
 	@echo "done."
 		
 doc:
@@ -25,5 +23,4 @@ doc:
 	@cd ../..
 	@rm -rf doc
 	@echo "done."
-	
 	
