@@ -4,6 +4,8 @@
  * @author Dalmir da Silva <dalmirdasilva@gmail.com>
  */
 
-ArduinoCarMonitor::ArduinoCarMonitor {
+#include "ArduinoCarMonitor.h"
+
+ArduinoCarMonitor::ArduinoCarMonitor() {
 
 }
